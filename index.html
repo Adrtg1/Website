@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Personal Portfolio </title>
+       <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/aaf02dca82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="website photos/Logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       <div class="header-text">
+    <p>Multidisciplinary Project Professional</p>
+    <h1>Hi, I'm <span>Adrian</span></h1>
+</div>
+</div>
+</div>
+<!----------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="website photos/meme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m a project professional with a background in criminology, creative development, and policy analysis. I specialize in leading cross-functional teams, translating complex insights into actionable strategies, and driving projects from concept to delivery. 
+                    Whether managing a community-focused policy initiative or co-leading a game development studio, I bring a balance of critical thinking, visual communication, and structured coordination to every project. 
+                    I’m passionate about building meaningful work that blends creativity, research, and real-world impact.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experence')">Experence</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Insight-Driven Project Planning</span><br>Skilled in translating qualitative, quantitative research & stakeholder input into actionable strategies and structured workflows.</li>
+                        <li><span>Cross-Functional Team Leadership</span><br>Ability to coordinate diverse teams across disciplines, balancing creative vision, operations, and execution.</li>
+                        <li><span>Strategic Communication</span><br>Experienced in presenting complex ideas clearly across audiences, from city stakeholders to creative collaborators.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experence">
+                    <ul>
+                        <li><span>January 2025 - Present</span><br>Co-Founder & Project Lead.</li>
+                        <li><span>January - April 2025</span><br>Policy Analyst.</li>
+                        <li><span>2021 - Present</span><br>Criminological Research & Thematic Analysis Projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 - August 2025</span><br>University of Ottawa — Bachelor of Social Sciences in Criminology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------portfolio=------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="website photos/painthigh-ezgif.com-animated-gif-maker.gif">
+                <div class="layer">
+                    <h3>Social Reintergration initiative</h3>
+                    <p>Role: Policy Analyst (Volunteer) City of Ottawa & University of Ottawa
+Timeline: January – April 2025</p>
+<a href="https://github.com/Adrtg1/Work-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="website photos/whites.gif">
+                <div class="layer">
+                    <h3>Development Log</h3>
+                    <p>A collection of past and ongoing work, development notes, and behind-the-scenes documentation hosted on Github</p>
+<a href="https://github.com/Adrtg1/Work-Portfolio/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="website photos/painthigh-ezgif.com-animated-gif-maker.gif">
+                <div class="layer">
+                    <h3>Video Game In Development</h3>
+                    <p>Role: Co-Founder & Project Lead Studio: 16961363 Canada Inc. (Independent Game Studio) Timeline: January 2025 – Present</p>
+<a href="https://github.com/Adrtg1/Work-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Home</a>
+    </div>
+</div>
+<!-----------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> adrian03.tg@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/adrian-t-51599b283/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://docs.google.com/document/d/1v8rrNmDdvPHFx69HKxmPsj-u3uIQFYML/edit?usp=sharing&ouid=110924633517464792238&rtpof=true&sd=true"><Button type="submit" class="btn btn2">Download CV</Button></a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <Button type="submit" class="btn btn2">Submit</Button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Adrian Tang 2025. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links")
+var tabcontents = document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+
+
+</script>
+
+<script>
+    var sidemeu =document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+ function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyH4SYzBLD2NA02XYpYGelMsT1l8z4kQNF2L3_B6D3HyZ5n3qihWSpfwInx6fW5G-7M/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+      })
+      setTimeout(function(){
+        msg.innerHTML = ""
+      },5000)
+      form.reset()
+    
+      .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
